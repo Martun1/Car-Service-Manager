@@ -1,36 +1,53 @@
+# 🔒 Bluetooth Attack Simulator
+
+A safe, educational C++ simulation that demonstrates how Bluetooth attacks work — **without interacting with real devices**.  
+Built for learning, experimenting, and understanding wireless security concepts in a controlled environment.
 
 ---
 
-# 📌 **2. Car Service Manager — README.md**
+## 🚀 Features
 
-```markdown
-# Car Service Manager
-A C++ command‑line application for managing car repair history, categories, and service records.  
-Designed for real-world use in small workshops.
+- Simulation of common Bluetooth attack vectors:
+  - 🔹 Weak pairing exploitation  
+  - 🔹 Device spoofing  
+  - 🔹 Unauthorized connection attempts  
+- Defensive countermeasures included  
+- Fully offline and safe to use  
+- Clear and intuitive console interface  
+- Modular design — easy to extend with new attack types  
 
-## 🚗 Features
-- Add new cars
-- Record repairs by category:
-  - Engine
-  - Chassis
-  - Body
-  - Electronics
-- Persistent file storage
-- Clean and simple CLI interface
+---
 
-## 🛠 Technologies Used
-- C++
-- OOP
-- File I/O
+## 🧠 Technologies Used
 
-## 📂 Project Structure
-- `main.cpp` — program entry point
-- `Car.h / Car.cpp` — car object
-- `ServiceManager.h / .cpp` — logic for storing and managing repairs
-- `data.txt` — persistent storage
+- **C++** — core programming language  
+- **Simulation logic** — for attack/defense modeling  
+- **Basic security concepts** — for educational understanding  
 
-## ▶️ How to Run
+---
+
+## 📁 Project Structure
+
+| File / Folder | Description |
+|----------------|-------------|
+| `main.cpp` | Core simulation logic |
+| `attacks/` | Simulated attack modules |
+| `defense/` | Defensive response logic |
+| `README.md` | Project documentation |
+
+---
+
+## ⚙️ How to Run
+
 ```bash
-git clone https://github.com/Martun1/Car-Service-Manager
-g++ main.cpp Car.cpp ServiceManager.cpp -o car_manager
-./car_manager
+# Clone the repository
+git clone https://github.com/Martun1/bluetooth-attack-simulator
+
+# Navigate to project directory
+cd bluetooth-attack-simulator
+
+# Compile the program
+g++ main.cpp -o bluetooth_sim
+
+# Run the simulation
+./bluetooth_sim
