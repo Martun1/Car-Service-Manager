@@ -1,53 +1,47 @@
-# 🔒 Bluetooth Attack Simulator
+# 🚗 Car Service Manager
 
-A safe, educational C++ simulation that demonstrates how Bluetooth attacks work — **without interacting with real devices**.  
-Built for learning, experimenting, and understanding wireless security concepts in a controlled environment.
-
----
-
-## 🚀 Features
-
-- Simulation of common Bluetooth attack vectors:
-  - 🔹 Weak pairing exploitation  
-  - 🔹 Device spoofing  
-  - 🔹 Unauthorized connection attempts  
-- Defensive countermeasures included  
-- Fully offline and safe to use  
-- Clear and intuitive console interface  
-- Modular design — easy to extend with new attack types  
+A C++ command-line application for managing car service history, repairs, and categories.  
+Designed with real workshop logic in mind — practical, simple, and fast.
 
 ---
 
-## 🧠 Technologies Used
+## 🔧 Features
 
-- **C++** — core programming language  
-- **Simulation logic** — for attack/defense modeling  
-- **Basic security concepts** — for educational understanding  
+- Add new cars to the system  
+- Record repairs by category:
+  - 🛠 Engine  
+  - 🚙 Chassis  
+  - 🧰 Body  
+  - ⚡ Electronics  
+- Persistent file storage  
+- Clean and intuitive CLI interface  
+- Modular structure for easy expansion  
+
+---
+
+## 🛠 Technologies Used
+
+- C++  
+- OOP  
+- File I/O  
 
 ---
 
 ## 📁 Project Structure
 
-| File / Folder | Description |
-|----------------|-------------|
-| `main.cpp` | Core simulation logic |
-| `attacks/` | Simulated attack modules |
-| `defense/` | Defensive response logic |
-| `README.md` | Project documentation |
+| File | Description |
+|------|-------------|
+| `main.cpp` | Program entry point |
+| `Car.h / Car.cpp` | Car object and logic |
+| `ServiceManager.h / .cpp` | Repair management system |
+| `data.txt` | Persistent storage |
 
 ---
 
-## ⚙️ How to Run
+## ▶️ How to Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/Martun1/bluetooth-attack-simulator
-
-# Navigate to project directory
-cd bluetooth-attack-simulator
-
-# Compile the program
-g++ main.cpp -o bluetooth_sim
-
-# Run the simulation
-./bluetooth_sim
+git clone https://github.com/Martun1/Car-Service-Manager
+cd Car-Service-Manager
+g++ main.cpp Car.cpp ServiceManager.cpp -o car_manager
+./car_manager
