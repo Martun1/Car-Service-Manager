@@ -34,16 +34,3 @@ Designed for real-world use in small workshops.
 git clone https://github.com/Martun1/Car-Service-Manager
 g++ main.cpp Car.cpp ServiceManager.cpp -o car_manager
 ./car_manager
-
-🎯 Purpose
-Built to combine programming with real automotive workflow knowledge.
-
-🔮 Future Improvements
-JSON storage
-
-Search filters
-
-GUI version
-
-📄 License
-MIT License
